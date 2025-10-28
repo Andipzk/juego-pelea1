@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalla de Amor Gatuno 🐱💕</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="canvas"></canvas>
+        
+        <div id="startScreen">
+            <div class="hearts">💖🐱🥊</div>
+            <h1>Batalla de gatos gatosos</h1>
+            <p class="instruction">
+                ¡Hola mi amor! 💕<br>
+                Prepárate para una juego de pelea de gatitos<br>
+                ¡Golpea y esquiva para descubrir mensajes especiales!
+            </p>
+            <div class="instruction">
+                💻 PC: ESPACIO = Golpear | Flechas ←→ = Esquivar<br>
+                📱 Móvil: Usa los botones en pantalla<br>
+                🎯 Llega a 10 golpes para ganar<br>
+                ⚠️ ¡Esquiva los ataques del oponente!
+            </div>
+            <button onclick="startGame()">¡COMENZAR LA PELEA! 🔥</button>
+        </div>
+
+        <div id="endScreen">
+            <div class="hearts">🏆</div>
+            <h1>Felicidadeeees</h1>!</h1>
+            <div id="finalMessage">
+                ¡Lo lograste, mi amor!<br><br>
+                Cada golpe tiene varios mensajes especiales para ti y solo para ti<br>
+                Eres mi campeona, hoy y siempre.<br><br>
+                ¡Feliz primer mes!
+            </div>
+            <button onclick="restartGame()">Pelear de Nuevo 🔄</button>
+        </div>
+
+        <div id="controls">
+            <button class="control-btn" ontouchstart="dodgeLeft()" ontouchend="stopDodge()">←</button>
+            <button class="control-btn" ontouchstart="punch()" style="width: 90px; height: 90px; font-size: 2em;">🥊</button>
+            <button class="control-btn" ontouchstart="dodgeRight()" ontouchend="stopDodge()">→</button>
+        </div>
+    </div>
+    <script src="js/funcionamiento.js"></script>
+</body>
+</html>
