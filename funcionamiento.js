@@ -25,9 +25,9 @@ const canvas = document.getElementById('canvas');
         let messageOpacity = 0;
 
         const playerCatImg = new Image();
-        playerCatImg.src = 'img/gatopeleaplayer.png';
+        playerCatImg.src = 'gatopeleaplayer.png';
         const opponentCatImg = new Image();
-        opponentCatImg.src = 'img/oponenteawonao.png';
+        opponentCatImg.src = 'oponenteawonao.png';
 
         const playerCat = {
             x: 0,
@@ -572,4 +572,5 @@ const canvas = document.getElementById('canvas');
             drawCat(opponentCat.x, opponentCat.y, 1.2, true, opponentCat.isPunching, opponentCat.hitAnimation);
 
             requestAnimationFrame(gameLoop);
+
         }
